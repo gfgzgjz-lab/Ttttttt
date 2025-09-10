@@ -20,8 +20,8 @@ jobs:
       - name: Run Telegram Script
         run: |
           echo "import requests, time
-BOT_TOKEN = '8487843464:AAECvpkUdcyQXFCFEX-XzWPAAfYhfV5mRn8'
-CHAT_ID = '1129058387'
+BOT_TOKEN = '${{ secrets.BOT_TOKEN }}'
+CHAT_ID = '${{ secrets.CHAT_ID }}'
 
 def send_message(text):
     url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
