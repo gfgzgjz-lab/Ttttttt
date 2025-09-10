@@ -19,17 +19,20 @@ jobs:
 
       - name: Run Telegram Script
         run: |
-          echo "import requests, time
-BOT_TOKEN = '${{ secrets.BOT_TOKEN }}'
-CHAT_ID = '${{ secrets.CHAT_ID }}'
+          cat > script.py << 'EOF'
+          import requests, time
 
-def send_message(text):
-    url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
-    data = {'chat_id': CHAT_ID, 'text': text}
-    requests.post(url, data=data)
+          BOT_TOKEN = '8487843464:AAECvpkUdcyQXFCFEX-XzWPAAfYhfV5mRn8'
+          CHAT_ID = '1129058387'
 
-for i in range(1, 11):
-    send_message(str(i))
-    time.sleep(1)
-" > script.py
+          def send_message(text):
+              url = f'https://api.telegram.org/bot{BOT_TOKEN}/sendMessage'
+              data = {'chat_id': CHAT_ID, 'text': text}
+              requests.post(url, data=data)
+
+          for i in range(1, 11):
+              send_message(str(i))
+              time.sleep(1)
+          EOF
+
           python script.py
